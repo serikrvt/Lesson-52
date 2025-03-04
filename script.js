@@ -153,9 +153,10 @@ const dataDabl= new Set(...data)
 //  16. Объединение двух массивов без`concat()`
 const arr1 = [1, 2, 3];
 const arr2 = [4, 5, 6];
-// Объедините массивы в один.  
-const newArray = [...arr1, ...arr2];
-const mergedArrayWithoutRepeat = [...new Set([...newArray])
+// Объедините массивы в один.
+
+// const newArray = [...arr1, ...arr2];
+// const mergedArrayWithoutRepeat = [...new Set([...newArray])
 
 
 
@@ -165,15 +166,21 @@ const mergedArrayWithoutRepeat = [...new Set([...newArray])
 // Найдите элементы из`a`, которых нет в`b`.  
 
 //  18. Преобразование двумерного массива в одномерный
-// const matrix = [
-//   [1, 2, 3],
-//   [4, 5, 6],
-//   [7, 8, 9]
-// ];
+const matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+matrix.flat(Infinity)
 // Преобразуйте его в `[1, 2, 3, 4, 5, 6, 7, 8, 9]` без`flat()`.  
 
 //  19. Генерация массива из чисел от 1 до 100  
-// Создайте массив `[1, 2, 3, ..., 100]` с помощью цикла.  
+// Создайте массив `[1, 2, 3, ..., 100]` с помощью цикла. 
+let number=[]
+let arrMax=10
+for(let i=0;i<arrMax; i++){
+    number.push(i)
+}
 
 //  20. Перемешивание массива(рандомный порядок)  
 // Реализуйте алгоритм для перемешивания элементов массива.  
@@ -194,11 +201,10 @@ const mergedArrayWithoutRepeat = [...new Set([...newArray])
 //  23. Разворот строки  
 // Переверните строку`"Hello, world!"`.  
 
+
+
 //  24. Извлечение цифр из строки
 // const str = "User ID: 49876, Age: 27";
 
 
 // Извлеките все числа в виде массива`[49876, 27]`.
-
-
-
